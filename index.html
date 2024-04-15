@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND BAZAR</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="./logo.png">
+    <link rel="stylesheet" href="./index-15.html">
+    <link rel="stylesheet" href="./index-15.1.html">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:arial;
+        }  
+*::-webkit-scrollbar {
+    width: 0px;
+}
+*::-webkit-scrollbar-track {
+    background:white;
+}
+*::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.navbar{
+    height: 55px;
+    margin: auto; 
+}
+.navbar img{
+    margin-top: -1rem;
+    margin-left: -50px;   
+}
+.navbar .search{
+    margin-top: -0.3rem;
+    margin-left: 1rem;
+}
+ .navbar h4{
+    font-weight: bold;
+    margin-top: -0.4rem;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.container ul a{
+    text-decoration: none;
+    padding: 0 15px;
+    margin: 0 2px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.container ul :hover{
+    transform: scale(1.03);
+    background-color: whitesmoke;
+}
+        .hero-section{
+            background-size: cover;
+            width: 100%;
+        }
+        .img1{
+            margin-left: 0.5rem;
+        }
+        .img2{
+            margin-left:720px;
+            margin-top: -350px;  
+        }
+        .shop-section{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         background-color:whitesmoke;
+        }
+        .box{
+            height: 400px;
+            width: 23%;
+            background-color: white;
+            margin-top: 1rem;
+        }
+        .box-img1,.box-img2,.box-img3,.box-img4,.box-img5,.box-img6,.box-img7,.box-img8{
+            background-image: url(./sports\ wear.jpg);
+            height: 300px;
+            width: 310px;
+            background-image: contain;
+            margin-top: 1rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 4px 2px 4px 2px;
+        }
+        .box-img1:hover,.box-img2:hover,.box-img3:hover,.box-img4:hover,.box-img5:hover,.box-img6:hover,.box-img7:hover,.box-img8:hover,.box-img9:hover,.box-img10:hover,.box-img11:hover,.box-img12:hover,.box-img13:hover{
+           transform: scale(1.05);
+        }
+        .box-content{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .box-content p{
+            margin-top: 15px;
+            margin-left: 10px;
+            color: green;
+            text-align: center;
+        }
+        .box-content h5{
+            justify-content: center;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .box-img2{
+            background-image: url(./makeup.jpeg);
+        }
+        .box-img3{
+            background-image: url(./watches.jpg);
+        }
+        .box-img4{
+            background-image: url(./wallet2.webp);
+        }
+        .box-img5{
+            background-image: url(./casual\ style.webp);
+        }
+        .box-img6{
+            background-image: url(.//active\ wear.webp);
+        }
+        .box-img7{
+            background-image: url(./speakers.jpg);
+        }
+        .box-img8{
+            background-image: url(./women.webp);
+        }
+        .middle-section{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .images{
+        margin: 0.5rem;
+        box-shadow: 4px 7px 7px;
+        }
+        .images:hover{
+        transform: scale(1.03);
+        }
+        .electronics{
+            height: 350px;
+            width: 1500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-left: 1rem;
+            background-color: whitesmoke;
+        }
+        .box-1{
+            height: 300px;
+            width: 19%;
+            background-color: white;
+            margin-top: 0.5rem;
+        }
+        .box-img9,.box-img10,.box-img11,.box-img12,.box-img13{
+            background-image: url(./fans.png);
+            height: 200px;
+            background-image: contain;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+        .box-img10{
+            background-image: url(./ACs.jpg);
+        }
+        .box-img11{
+            background-image: url(./fridges.jpg);
+        }
+        .box-img12{
+            background-image: url(./mixers.webp);
+        }
+        .box-img13{
+            background-image: url(./water-purifier.png);
+        }
+        .footer{
+            height: 300px;
+            width: 1500px;
+            background-color: whitesmoke;
+            color: black;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        .footer h4{
+            font-weight: bold;
+        }
+        h4{
+            margin-top: 2rem;
+        }
+        ul a{
+            display: block;
+            font-size: 1rem;
+            margin-top: 0.8rem;  
+        }
+        .original{
+            margin-top: 1.5rem;
+            margin-left: 5px;
+        }
+        .return{
+            margin-top: 8rem;
+            margin-left: -250px;
+        }
+        .footer2{
+            background-color: white;
+            height: 10px;
+            display: flex;
+        }
+        .bottom{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <navbar>
+        <div class="navbar">
+            <div class="container">
+               <img src="./logo.png"width="60" height="60">
+              <h4>BRAND BAZAR</h4>
+              <div class="search">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+              <ul>
+                 <a href="#">MEN</a>
+                 <a href="#">WOMEN</a>
+                 <a href="#">KIDS</a>
+                 <a href="#">FOOTWEAR</a> 
+                 <a href="#">WATCHES</a>
+                 <a href="#">BUEATY</a>
+              </ul>
+           </div>
+       </div>
+    </navbar>
+   
+    <!--hero-section-->
+    <div class="hero-section">
+       <div class="img1"><img src="./shop-section-1.jpg"></div>
+        <div class="img2"><img src="./shop-section-2.webp" width="795px"height="350"></div>
+    </div>
+  <!--shop section-->
+  <h3 style="font-weight: bold">Shop By category</h3>
+    <div class="shop-section">
+        <div class="box1 box">
+            <div class="box-content">
+            <div class="box-img1"></div>
+            <h5>SPORTS WEAR</h5>
+            <p>see more</p>
+       </div>
+    </div>
+        <div class="box2 box">
+            <div class="box-content">
+            <div class="box-img2"></div>
+            <h5>Bueaty&Makeup</h5>
+            <p>see more</p>
+            </div>
+        </div>
+        <div class="box3 box">  
+            <div class="box-content">
+            <div class="box-img3"></div>
+            <h5>Watches</h5>
+            <p>see more</p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+            <div class="box-img4"></div>
+            <h5>Wallet</h5>
+            <p>see more</p>
+            </div>
+        </div>
+        <div class="box5 box">
+            <div class="box-content">
+            <div class="box-img5"></div>
+            <h5>Casual wear</h5>
+            <p>see more</p>
+            </div>
+        </div>  
+        <div class="box6 box">
+            <div class="box-content">
+            <div class="box-img6"></div>
+            <h5>Active wear</h5>
+            <p>see more</p>
+            </div>
+        </div>  
+        <div class="box7 box">
+            <div class="box-content">
+            <div class="box-img7"></div>
+            <h5>Head phones&Speakers</h5>
+            <p>see more</p>
+            </div>
+        </div>  
+        <div class="box8 box">
+            <div class="box-content">
+            <div class="box-img8"></div>
+            <h5>Traditional wear</h5>
+            <p>see more</p>
+            </div>
+        </div>
+    <br>
+    <br>
+    <!--middl-section-->
+    <div class="middle-section">
+        <div class="images"><img src="./shop-1.webp"></div>
+        <div class="images"><img src="./shop-4.webp"></div>
+        <div class="images"><img src="./shop-3.webp"></div>
+        <div class="images"><img src="./shop-2.webp"></div>
+        </div>
+    </div>
+    <!--electronics-->
+    <h3 style="font-weight: bolder">
+    Best Deals On Appliances</h3>
+    <div class="electronics">
+        <div class="box-1">
+            <div class="box-content">
+            <div class="box-img9"></div>
+            <h5>5 Star Rated Fans</h5>
+            <p>From 999/-</p>
+        </div>
+    </div>
+    <div class="box-1">
+     <div class="box-content">
+        <div class="box-img10"></div>
+        <h5>Best Deals On ACs</h5>
+        <p>Shop Know!</p>
+     </div>
+    </div>
+    <div class="box-1">
+        <div class="box-content">
+        <div class="box-img11"></div>
+        <h5> Top Deals On Fridges</h5>
+        <p>From 9,999/-</p>
+        </div>
+    </div>
+    <div class="box-1">
+        <div class="box-content">
+        <div class="box-img12"></div>
+        <h5>Mixers</h5>
+        <p>Under 1,600/-</p>
+        </div>
+    </div>
+    <div class="box-1">
+        <div class="box-content">
+        <div class="box-img13"></div>
+        <h5>Top Water Purifiers</h5>
+        <p>From 8,599/-</p>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+     <div class="footer">
+        <ul>
+            <h4>ONLINE SHOPPING</h4>
+            <a>MEN</a>
+            <a>Women</a>
+            <a>Kids</a>
+            <a>Bueaty</a>
+            <a>Watches</a>
+            <a>Footwear</a>
+        </ul>
+        <ul>
+            <h4>CUSTOMER POLICIES</h4>
+            <a>Contact us</a>
+            <a>FAQ</a>
+            <a>T&C</a>
+            <a>Returns</a>
+            <a>Track Oders</a>
+            <a>Privacy policy</a>
+        </ul>
+        <ul>
+            <h4>USEFUL LINKS</h4>
+            <a>Blog</a>
+            <a>Careers</a>
+            <a>Site Map</a>
+            <a>Cleartrip</a>
+       </ul>    
+        <div class="original">
+                <img src="./original.png"width="50px"height="50px"<h4>100% original</h4>
+                <p>Grantee for all Products</p>
+        </div>
+            <div class="return">
+                <img src="./replace-1.png" width="50px"height="50px"<h6>Return Within 14days</h6>
+                <p>on reciving your order</p>
+            </div>
+            <div class="keep">
+                <h4>KEEP IN TOUCH</h4>
+                <img src="./insta-1.png"width="40px"height="40px">
+                <img src="./facebook-1.jpeg"width="40px"height="40px">
+                <img src="./twitter.png"width="40px"height="40px">
+     </div>
+    </footer>
+    <footer2>
+        <div class="footer2">
+        <div class="contact">
+            <p>in case of any concern<img src="./cal-img.png"width="30px"height="30px"><a href="tel:9082874503">contact us</a></p>
+        </div>
+        </div>
+        <br>
+        <div class="bottom">
+        <form>
+            <input class="btn btn-outline-success" type="submit" formaction="./index-15.html" value="Login">&<input class="btn btn-outline-success"type="submit" formaction="./index-15.1.html" value="Sign-in">
+        </form>
+        </div>
+        <br>
+    </footer2>
+
+</body>
+</html>
