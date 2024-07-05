@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAND BAZAR</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="./logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        *::-webkit-scrollbar {
+            width: 0px;
+        }
+        *::-webkit-scrollbar-track {
+            background: white;
+        }
+        *::-webkit-scrollbar-thumb {
+            background: #aaa;
+        }
+        *::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px;
+            padding: 0px 8px;
+            
+        }
+        .navbar-brand img {
+            margin-right: 10px;
+        }
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+        }
+        .navbar-nav .nav-link:hover {
+            background-color: bisque;
+            transform: scale(1.02);
+        }
+        .hero-section {
+            width: 100%;
+            margin-top: 60px; /* Adjust to the height of the navbar */
+        }
+        .img1, .img2 {
+            width: 100%;
+            height: 500px;
+        }
+        .shop-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: whitesmoke;
+        }
+        .box {
+            background-color: white;
+            margin-top: 1rem;
+            flex: 1 1 calc(25% - 2rem);
+            margin: 1rem;
+            box-shadow: 2px 2px 4px;
+        }
+        .box-content {
+            padding: 1rem;
+        }
+        .box-content p {
+            margin-top: 15px;
+            color: green;
+            text-align: center;
+        }
+        .box-content h5 {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        .box-img {
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box-img1 { background-image: url('./sports wear.jpg'); }
+        .box-img2 { background-image: url('./makeup.jpeg'); }
+        .box-img3 { background-image: url('./watches.jpg'); }
+        .box-img4 { background-image: url('./wallet2.webp'); }
+        .box-img5 { background-image: url('./casual style.webp'); }
+        .box-img6 { background-image: url('./active wear.webp'); }
+        .box-img7 { background-image: url('./speakers.jpg'); }
+        .box-img8 { background-image: url('./women.webp'); }
+        .box-img1:hover, .box-img2:hover, .box-img3:hover, .box-img4:hover, .box-img5:hover, .box-img6:hover, .box-img7:hover, .box-img8:hover,.box-img9:hover,.box-img10:hover,.box-img11:hover,.box-img12:hover,.box-img13:hover {
+            transform: scale(1.03);
+        }
+        .middle-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .images {
+            margin: 0.5rem;
+            box-shadow: 2px 2px 4px;
+        }
+        .images:hover {
+            transform: scale(1.03);
+        }
+        .electronics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: whitesmoke;
+        }
+        .box-1 {
+            background-color: white;
+            margin-top: 0.5rem;
+            flex: 1 1 calc(20% - 2rem);
+            margin: 1rem;
+            box-shadow: 2px 2px 4px;
+        }
+        .box-img9 { background-image: url('./fans.png'); }
+        .box-img10 { background-image: url('./ACs.jpg'); }
+        .box-img11 { background-image: url('./fridges.jpg'); }
+        .box-img12 { background-image: url('./mixers.webp'); }
+        .box-img13 { background-image: url('./water-purifier.png'); }
+        .footer {
+            background-color: whitesmoke;
+            color: black;
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .footer h4 {
+            font-weight: bold;
+        }
+        ul a {
+            display: block;
+            font-size: 1rem;
+            margin-top: 0.8rem;  
+            text-decoration: none;
+            color: black;
+        }
+        .original {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .return {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+        .footer2 {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .bottom {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .box, .box-1 {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+        @media (max-width: 576px) {
+            .box, .box-1 {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./logo.png" width="60" height="60" alt="Brand Bazar Logo">
+                <h4 class="m-0">BRAND BAZAR</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WOMEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FOOTWEAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WATCHES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BEAUTY</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <img src="./shop-section-1.jpg" class="img1" alt="Hero Image 1">
+        <img src="./shop-section-2.webp" class="img2" alt="Hero Image 2">
+    </div>
+
+    <!-- Shop Section -->
+    <h3 style="font-weight: bold; text-align: center;">Shop By Category</h3>
+    <div class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img1"></div>
+                <h5>SPORTS WEAR</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img2"></div>
+                <h5>Beauty & Makeup</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img3"></div>
+                <h5>Watches</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img4"></div>
+                <h5>Wallet</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img5"></div>
+                <h5>Casual Wear</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img6"></div>
+                <h5>Active Wear</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img7"></div>
+                <h5>Headphones & Speakers</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <div class="box-img box-img8"></div>
+                <h5>Women Wear</h5>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+        <img src="./shop-1.webp" class="img-fluid images" alt="Middle Image 1">
+        <img src="./shop-3.webp" class="img-fluid images" alt="Middle Image 2">
+    </div>
+
+    <!-- Electronics Section -->
+    <h3 style="font-weight: bold; text-align: center;">Electronics & Home Appliances</h3>
+    <div class="electronics">
+        <div class="box-1">
+            <div class="box-content">
+                <div class="box-img box-img9"></div>
+                <h5>Fans</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="box-content">
+                <div class="box-img box-img10"></div>
+                <h5>ACs</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="box-content">
+                <div class="box-img box-img11"></div>
+                <h5>Refrigerators</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="box-content">
+                <div class="box-img box-img12"></div>
+                <h5>Mixers & Grinders</h5>
+                <p>See more</p>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="box-content">
+                <div class="box-img box-img13"></div>
+                <h5>Water Purifiers</h5>
+                <p>See more</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <div>
+                <h4>Customer Service</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Returns</li>
+                    <li>Order Status</li>
+                </ul>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li>Company Information</li>
+                    <li>Careers</li>
+                    <li>Sustainability</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li>Gift Cards</li>
+                    <li>Find a Store</li>
+                    <li>Sign Up for Email</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>&copy; 2024 Brand Bazar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
